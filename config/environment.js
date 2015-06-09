@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'scielo-helper',
+    podModulePrefix: 'scielo-helper/pods',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
