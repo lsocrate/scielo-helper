@@ -1,0 +1,27 @@
+<h3>New Article</h3>
+<form {{action 'createXML' model on='submit'}}>
+  <div class="row">
+    <div class="columns small-12">
+      <label>
+        Tipo de artigo:
+        {{ember-selectize
+          content=documentType
+          selection=model.documentType
+          optionValuePath='id'
+          optionLabelPath='description'
+        }}
+      </label>
+    </div>
+    <div class="columns small-12">
+      <label>
+        Língua:
+        {{ember-selectize
+          content=languages
+          selection=model.documentLanguage
+          optionValuePath='code'
+          optionLabelPath='language'
+        }}
+      </label>
+    </div>
+  </div>
+</form>
