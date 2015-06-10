@@ -1,3 +1,19 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
-{{outlet}}
+<div class="contain-to-grid">
+  <nav class="top-bar" role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1>{{#link-to 'index'}}Scielo Helper{{/link-to}}</h1>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right">
+        <li><a>Get XML</a></li>
+      </ul>
+    </section>
+  </nav>
+</div>
+<div class="row">
+  <div class="columns small-12">
+    {{outlet}}
+  </div>
+</div>
